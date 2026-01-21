@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: white;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        .input::placeholder {
+            color: white;
+        }
+
+        .submit-btn {
+            background-color: green;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <input class="input" type="text" id="name" name="name" required placeholder="Enter Name">
+            <input class="input" type="email" id="email" name="email" required placeholder="Enter Email">
+            <input class="input" type="number" id="age" name="age" required min="18" placeholder="Enter Age (min. 18)">
+            <input class="submit-btn" type="submit" name="submit"value="Submit Form">
+        </form>
+    </div>
+</body>
+</html>
